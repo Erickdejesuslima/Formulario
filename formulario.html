@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>formulário</title>
+</head>
+<body>
+    <div>
+        <h2 id="titulo">cadastro</h2>
+        <br>
+        <br>
+    </div>
+
+    <form>
+       
+            
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" placeholder="email" required>
+            
+            </div>
+            <div class="campo">
+                <label for="senha"><strong>Senha</strong></label>
+                <input type="password" name="senha" id="senha" placeholder="senha" required>
+            </div>
+        </fieldset>
+
+            <div class="campo">
+                <label>Sexo:</label>
+                <label>
+                <input type="radio" name="sexo" value="Masculino">Masculino
+                </label>
+                <label>
+                <input type="radio" name="sexo" value="Feminino">Feminino
+                </label>
+                <label>
+                <input type="radio" name="sexo" value="Outro">Outro
+                </label>
+            </div>
+            <div class="campo">
+                <label for="Estado"><strong>Estado</strong></label>
+                <select id="Estado" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>RJ</option>
+                  <option>DF</option>
+                  <option>SP</option>
+                </select>
+            </div>
+            <div class="grupo">
+                <label>Interesses:</label><br>
+                <input type="checkbox" id="interesse1" name="interesse1" value="Esportes">
+                <label for="interesse1">Esportes</label><br>
+                <input type="checkbox" id="interesse2" name="interesse2" value="Games">
+                <label for="interesse2">Games</label><br>
+                <input type="checkbox" id="interesse3" name="interesse3" value="Animais">
+                <label for="interesse3">Animais</label>
+            </div>
+        <div class="campo">
+            
+            <label for="sugestao">deixe sua sugestão:</label><br>
+            <textarea></textarea>
+        </div>
+        <button class="botao" type="submit" onsubmit="">Cadastrar</button>  
+     
+    </form>
+</body>
+</html>
